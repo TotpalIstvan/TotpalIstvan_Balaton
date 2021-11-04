@@ -65,8 +65,9 @@ public class Balaton {
                 if (this.matrix[i][j] == 0) {
                     s += " " + this.matrix[i][j] + " ";
                 } else {
-                    s += + this.matrix[i][j] + " ";
+                    s += +  matrix[i][j] + " ";
                 }
+
 
             }
             s += "\n";
