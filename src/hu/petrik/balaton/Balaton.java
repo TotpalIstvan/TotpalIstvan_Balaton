@@ -55,12 +55,19 @@ public class Balaton {
             e.getMessage();
         }
     }
+
+
     @Override
     public String toString() {
         String s= "";
         for (int i = 0; i < this.n; i++) {
             for (int j = 0; j < this.m; j++) {
-                s += this.matrix[i][j]+" ";
+                if (this.matrix[i][j] == 0) {
+                    s += " " + this.matrix[i][j] + " ";
+                } else {
+                    s += + this.matrix[i][j] + " ";
+                }
+
             }
             s += "\n";
         }
